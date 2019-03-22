@@ -12,7 +12,7 @@ if(isset($_GET['action'])=='login') {
 $a = $_POST["Email"];
 $b = $_POST["Password"];
 
-$connection = new mysqli("localhost","root","","music");		//connection to database
+$connection = new mysqli("localhost","username","password","music");		//connection to database
 
 
 $result = $connection->query("SELECT * FROM users WHERE Email='$a' AND Password ='$b'");		//SQL query for email and password

@@ -22,7 +22,7 @@
 	}
 else
 {
-	$connection = new mysqli("localhost", "root", "", "music");
+	$connection = new mysqli("localhost", "username", "password", "music");
 	$connection->query("INSERT INTO users(Forename,Surname,Email,Password,AddressLine1,AddressLine2,Town,PostCode) VALUES ('" . $Forename . "','" . $Surname . "','" . $Email . "','" . $Password . "','" . $AddressLine1 . "','" . $AddressLine2 . "','" . $Town . "','" . $PostCode . "')") OR die($connection->error);
 	$connection->close(); //SQL insert statment inserting vairables into the database
 			{

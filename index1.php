@@ -44,8 +44,6 @@ echo"Please Log in, Sign up Or View Library";
 }
 
 
-}
-
 if( isset($_SESSION["userID"]))
 {
 	echo '<form method="post" action="signout.php">';
